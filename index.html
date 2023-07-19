@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+      <link rel="stylesheet" href="loading.css">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs"></script> -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="teacher.css">
+  </head>
+  <style>
+	
+		.swiper {
+			width: 100%;
+			height: 400px;
+			overflow-y: visible;
+		}
+		.swiper-slide.middle .teacher-card {
+			filter: brightness(1.2); /* Adjust brightness value as desired */
+			background-color: aliceblue;
+			transform: scale(1.3);
+      box-shadow: 0 0 128px 0 #73c1e31e,
+    0 32px 64px -48px #73b4d07c;		}
+		.swiper-slide.middle {
+			z-index: 9;
+		}
+		.swiper-slide {
+			z-index: 1;
+		}
+		.swiper-slide .teacher-card {
+			background-color: rgba(144, 134, 134, 0.677);
+			transition: 0.5s ease-in-out;
+			z-index: 1;
+		}
+	</style>
+  <body>
+      <div class="loader">
+    <div class="circle"></div>
+  </div>
+    <nav
+      class="navbar navbar-expand navbar-light d-none d-lg-block"
+      id="firstnavbar"
+      style="border-bottom: 1px solid #e2e2e2"
+    >
+      <div class="container-lg" style="height: 80px">
+        <a href="#" class="navbar-brand">
+          <img
+            src="image/designlogo-removebg-preview.png"
+            alt=""
+            height="80px"
+          />
+        </a>
+        <ul class="navbar-nav me-auto">
+          <li
+            class="nav-item px-3"
+            style="border-right: 1px solid rgb(211, 206, 206)"
+          >
+            <a href="#" class="nav-link"
+              ><i class="fa-solid fa-phone" style="color: #5aa9f2"></i> +95
+              94566679887</a
+            >
+          </li>
+          <li class="nav-item px-3">
+            <a href="#" class="nav-link"
+              ><i class="fa-solid fa-envelope-open" style="color: #5aa9f2"></i>
+              contact@nationcaremedical.com</a
+            >
+          </li>
+        </ul>
+        <div class="search-box">
+          <input class="search-input" type="text" name="" placeholder="search">
+          <a href="#" class="search-btn">
+            <i class="fas fa-search"></i>
+          </a>     
+        </div>     
+        <a
+          href="#"
+          class="btn add-school d-none d-lg-block"
+          data-bs-toggle="modal"
+          data-bs-target="#loginform"
+          >ကျောင်းလျှောက်ရန်</a
+        >
+      </div>
+    </nav>
+    <!--first navbar ends-->
+
+    <!--second navbar starts-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-lg">
+        <a href="#" class="navbar-brand d-lg-none d-block">
+          <img
+            src="image/designlogo-removebg-preview.png"
+            alt=""
+            height="80px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#secnavcollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="secnavcollapse">
+          <ul class="navbar-nav">
+            <li class="nav-item px-3">
+              <a href="#" class="nav-link">HMI အကြောင်း</a>
+            </li>
+            <li class="nav-item px-3">
+              <a href="#" class="nav-link">2-Year Certificate Program</a>
+            </li>
+            <li class="nav-item px-3">
+              <a href="#" class="nav-link">Academics</a>
+            </li>
+            <li class="nav-item px-3">
+              <div class="dropdown first-dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Courses
+                </a>
+                <div class="dropdown-menu first-dropdown-menu">
+                  <a class="dropdown-item" href="#">Year-1</a>
+                  <a class="dropdown-item" href="#">Year-2</a>
+                  <div class="second-dropdown">
+                    <a
+                      class="dropdown-item dropdown-toggle second-dropdown-toggle"
+                      href="#"
+                      role="button"
+                      id="nestedDropdownLink"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      OJT
+                    </a>
+                    <div
+                      class="dropdown-menu second-dropdown-menu"
+                      aria-labelledby="nestedDropdownLink"
+                    >
+                      <a class="dropdown-item" href="#">C Programming</a>
+                      <a class="dropdown-item" href="#">JavaSE Programming</a>
+                      <a class="dropdown-item" href="#">Jakarta EE 9</a>
+                      <a class="dropdown-item" href="#"
+                        >Spring Framework 5 Full Stack Course</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item px-3">
+              <a href="#" class="nav-link">Contact us</a>
+            </li>
+            <li class="nav-item px-3 d-lg-none d-block">
+              <a
+                href="#"
+                class="nav-link"
+                data-bs-toggle="modal"
+                data-bs-target="#loginform"
+                >ကျောင်းလျှောက်ရန်</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Banner starts -->
+    <div class="banner-container mb-5">
+      <div class="banner">
+        <img src="image/Design1.jpg" alt="" width="100%" height="00px" />
+        <div class="blur"></div>
+      </div>
+      <div class="banner-text-container">
+        <div class="banner-header">
+          <h1 class="slideRight1" style="color: #4b80c2">HOST</h1>
+          <h2 class="slideRight2">MYANMAR INSTITUTE</h2>
+        </div>
+        <div class="banner-text">
+          <h3 class="slideRight3">For Your Better Career & Brighter Future</h3>
+          <div class="underline slideRight4"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Banner ends -->
+    <br />
+    <!-- content starts -->
+    <div class="container-md mt-5 main-body-content">
+      <div class="row text-card" id="text-card1">
+        <div class="col-md-4 hmi-logo">
+          <img
+            src="image/Screenshot_from_2023-07-19_15-10-56-removebg-preview.png"
+            alt=""
+            class="w-100"
+            height="220px"
+          />
+        </div>
+        <div class="col-md-8">
+          <div class="textbox1 p-4">
+            <!-- <h3>Free Shiping</h3>
+                <h2>35% OFF</h2> -->
+            <p class="textbox">
+              Host Myanmar IT Solution (Yangon) Freelance in 2013-2014 To
+              perform IT services in Japan and abroad while doing projects in
+              the second half of 2014. It was fixed. Now HM(Ygn) has more than
+              200 entrepreneurs There are also offshore projects in foreign
+              countries that we are working with.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row my-4 text-card" id="text-card2">
+        <div class="col-md-8">
+          <div class="textbox2 p-3">
+            <p class="textbox">
+              Through this, in 2019, IT professionals will be trained in the
+              workplace before entering the workplace HMM was established with
+              the intention of passing it on. Currently On Job More than 200
+              people attend training courses to enter the workplace. There is
+              help.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 hmi-logo">
+          <img
+            src="image/Screenshot_from_2023-07-19_15-12-09-removebg-preview.png"
+            alt=""
+            class="w-100"
+            height="220px"
+          />
+        </div>
+      </div>
+      <div class="row my-4 text-card" id="text-card3">
+        <div
+          class="col-md-4 hmi-logo align-items-center mt-5 justify-content-center"
+        >
+          <img
+            src="image/Screenshot_from_2023-07-19_15-23-13-removebg-preview.png"
+            alt=""
+            class="w-100"
+            height="220px"
+          />
+        </div>
+        <div class="col-md-8">
+          <div class="textbox1 p-4">
+            <!-- <h3>Free Shiping</h3>
+              <h2>35% OFF</h2> -->
+            <p class="textbox">
+              On Job Training Project on Computer Science, Software Engineering
+              concepts in October 2022 Aiming to learn practical and theoretical
+              skills together with students. A 2-Year Software Engineer
+              Certificate Program was launched at HMI. IT in the program DTP
+              Courses, A+ and Networking, OJT based on C & Java Programming by
+              Industry Experts Recognized by (7) countries, including Japan,
+              along with the ITPEC Exam and the Japanese Language
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid activities">
+      <h1 class="text-center activities-text">Our Activities</h1>
+      <p class="activities-seemore">See More</p>
+      <div class="row">
+        <div class="col-12 p-0">
+          <div class="row ativity-image-wrapper">
+            <div class="col-2 p-0">
+              <div class="over-lay"></div>
+              <img src="image/Design1.jpg" alt="" width="100%" />
+            </div>
+            <div class="col-2 p-0">
+              <div class="over-lay"></div>
+              <img src="image/design2.jpg" alt="" width="100%" />
+            </div>
+            <div class="col-2 p-0">
+              <div class="over-lay"></div>
+              <img src="image/design7.jpg" alt="" width="100%" />
+            </div>
+            <div class="col-2 p-0">
+              <div class="over-lay"></div>
+              <img src="image/design9.jpg" alt="" width="100%" />
+            </div>
+            <div class="col-2 p-0">
+              <div class="over-lay"></div>
+              <img src="image/Design1.jpg" alt="" width="100%" />
+            </div>
+            <div class="col-2 p-0">
+              <div class="over-lay"></div>
+              <img src="image/design8.jpg" alt="" width="100%" />
+            </div>
+          </div>
+          <div class="row ativity-image-wrapper">
+            <div class="col-2 p-0">
+              <div class="over-lay"></div>
+              <img src="image/design6.jpg" alt="" width="100%" />
+            </div>
+            <div class="col-2 p-0">
+              <div class="over-lay"></div>
+              <img src="image/design7.jpg" alt="" width="100%" />
+            </div>
+            <div class="col-2 p-0">
+              <div class="over-lay"></div>
+              <img src="image/design3.jpg" alt="" width="100%" />
+            </div>
+            <div class="col-2 p-0">
+              <div class="over-lay"></div>
+              <img src="image/design5.jpg" alt="" width="100%" />
+            </div>
+            <div class="col-2 p-0">
+              <div class="over-lay"></div>
+              <img src="image/design9.jpg" alt="" width="100%" />
+            </div>
+            <div class="col-2 p-0">
+              <div class="over-lay"></div>
+              <img src="image/design2.jpg" alt="" width="100%" />
+            </div>
+          </div>
+          <div class="row ativity-image-wrapper">
+            <div class="col-2 p-0">
+              <div class="over-lay"></div>
+              <img src="image/design3.jpg" alt="" width="100%" />
+            </div>
+            <div class="col-2 p-0">
+              <div class="over-lay"></div>
+              <img src="image/design9.jpg" alt="" width="100%" />
+            </div>
+            <div class="col-2 p-0">
+              <div class="over-lay"></div>
+              <img src="image/design6.jpg" alt="" width="100%" />
+            </div>
+            <div class="col-2 p-0">
+              <div class="over-lay"></div>
+              <img src="image/design2.jpg" alt="" width="100%" />
+            </div>
+            <div class="col-2 p-0">
+              <div class="over-lay"></div>
+              <img src="image/design7.jpg" alt="" width="100%" />
+            </div>
+            <div class="col-2 p-0">
+              <div class="over-lay"></div>
+              <img src="image/design5.jpg" alt="" width="100%" />
+            </div>
+          </div>
+          <div class="row ativity-image-wrapper">
+            <div class="col-2 p-0">
+              <div class="over-lay"></div>
+              <img src="image/design9.jpg" alt="" width="100%" />
+            </div>
+            <div class="col-2 p-0">
+              <div class="over-lay"></div>
+              <img src="image/design2.jpg" alt="" width="100%" />
+            </div>
+            <div class="col-2 p-0">
+              <div class="over-lay"></div>
+              <img src="image/design5.jpg" alt="" width="100%" />
+            </div>
+            <div class="col-2 p-0">
+              <div class="over-lay"></div>
+              <img src="image/design3.jpg" alt="" width="100%" />
+            </div>
+            <div class="col-2 p-0">
+              <div class="over-lay"></div>
+              <img src="image/design6.jpg" alt="" width="100%" />
+            </div>
+            <div class="col-2 p-0">
+              <div class="over-lay"></div>
+              <img src="image/design7.jpg" alt="" width="100%" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- itpec-start -->
+    <div class="itpec-container container">
+      <div class="ip">
+        <div class="course-header">
+          <h1>Year-1</h1>
+          <p>IT Passport Preparation Course</p>
+        </div>
+        <div class="row">
+          <div class="col-md-4" id="ip-left">
+            <div class="course">
+              <h2>Strategy</h2>
+              <ul>
+                <li>Corporate Activities</li>
+                <li>Business Strategy</li>
+                <li>System Strategy</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4" id="ip-btn">
+            <div class="course">
+              <h2>Management</h2>
+              <ul>
+                <li>Development Technology</li>
+                <li>Project Management</li>
+                <li>Service Management</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4" id="ip-right">
+            <div class="course">
+              <h2>Technology</h2>
+              <ul>
+                <li>Basic Theory</li>
+                <li>Computer System</li>
+                <li>Technology Element</li>
+                <li>SpreadSheet</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4" id="ip-left-2">
+            <div class="course">
+              <h2>Complementary Courses</h2>
+              <ul>
+                <li>A+ and Networking</li>
+                <li>Desktop Publishing Course</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4" id="ip-btn-2">
+            <div class="course">
+              <h2>Software Development Course</h2>
+              <ul>
+                <li>C Programming Language</li>
+                <li>Java SE Course + OJT</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4" id="ip-right-2">
+            <div class="course">
+              <h2>Japanese Language</h2>
+              <ul>
+                <li>N5 and N4</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fe">
+        <div class="course-header">
+          <h1>Year-2</h1>
+          <p>Fundamental Exam Course</p>
+        </div>
+        <div class="row mb-5">
+          <div class="col-md-2"></div>
+          <div class="col-md-4" id="course-1">
+            <div class="course " >
+              <h2>Volume 1 <span>( IT Fundamentals )</span></h2>
+              <ul>
+                <li>Hardware</li>
+                <li>Information Processing System</li>
+                <li>Software</li>
+                <li>Database</li>
+                <li>Network</li>
+                <li>Security</li>
+                <li>Data Structure and Algorithm</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4" id="course-2">
+            <div class="course  " >
+              <h2>Volume 2 <span>( IT Strategy and Management )</span></h2>
+              <ul>
+                <li>Corporate and Legal Affairs</li>
+                <li>Business Strategy</li>
+                <li>Information Systems Strategy</li>
+                <li>Development Technology</li>
+                <li>Project Management</li>
+                <li>Service Management</li>
+                <li>System Audit and Internal Control</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-2" ></div>
+          <div class="col-md-4" id="course-3">
+            <div class="course ">
+              <h2>Software Development Courses</h2>
+              <ul>
+                <li>Jakarta EE9 Course +OJT</li>
+                <li>Spring Framework 5 Full Stack Course +OJT</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4" id="course-4">
+            <div class="course ">
+              <h2>Japanese Language</h2>
+              <ul>
+                <li>N3</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+    </div>
+    <!-- itpec-end -->
+
+    <section class="pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <h3 class="mb-3">Teachers</h3>
+          </div>
+          <!-- <div class="col-6 text-right">
+            <a
+              class="btn btn-primary mb-3 mr-1"
+              href="#carouselExampleIndicators2"
+              role="button"
+              data-slide="prev"
+            >
+              <i class="fa fa-arrow-left"></i>
+            </a>
+            <a
+              class="btn btn-primary mb-3"
+              href="#carouselExampleIndicators2"
+              role="button"
+              data-slide="next"
+            >
+              <i class="fa fa-arrow-right"></i>
+            </a>
+          </div> -->
+          <div class="col-12">
+            	<div class="swiper my-5">
+			<!-- Additional required wrapper -->
+			<div class="swiper-wrapper">
+				<!-- Slides -->
+				<div class="swiper-slide">
+					<div class="teacher-card">
+            <div class="teacher-card-image">
+              <img src="https://internationalteacherstraining.com/blog/wp-content/uploads/2018/08/171219-teacher-stock.jpg" alt="Teacher Avatar">
+            </div>
+            <div class="teacher-card-content">
+              <h2 class="teacher-card-name">John Smith</h2>
+              <p class="teacher-card-subject">Mathematics Teacher</p>
+              <p class="teacher-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel risus ligula. Proin viverra felis non lacus tempor, nec consectetur odio rutrum.</p>
+              <a href="#" class="teacher-card-link">Learn More</a>
+            </div>
+          </div>
+          
+				</div>
+        <div class="swiper-slide middle">
+					<div class="teacher-card">
+            <div class="teacher-card-image">
+              <img src="https://fthmb.tqn.com/bzCTJWqcE4bZCuV_XXuCJw6zfMo=/2121x1414/filters:fill(auto,1)/GettyImages-548929135-59f24924d088c000104ed810.jpg" alt="Teacher Avatar">
+            </div>
+            <div class="teacher-card-content">
+              <h2 class="teacher-card-name">John Smith</h2>
+              <p class="teacher-card-subject">Mathematics Teacher</p>
+              <p class="teacher-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel risus ligula. Proin viverra felis non lacus tempor, nec consectetur odio rutrum.</p>
+              <a href="#" class="teacher-card-link">Learn More</a>
+            </div>
+          </div>
+          
+				</div>
+        <div class="swiper-slide ">
+					<div class="teacher-card">
+            <div class="teacher-card-image">
+              <img src="https://th.bing.com/th/id/R.ac981fe8a5549d3527336bcd7cd626e2?rik=B%2frywa7CHE7HEw&riu=http%3a%2f%2fspeakenglishcenter.com%2fwp-content%2fuploads%2f2015%2f10%2fteacherOath.jpg&ehk=QfNP8CvnzUCZ9zewAxNRPdVbunVtfQMTlRrwLk2dM98%3d&risl=&pid=ImgRaw&r=0" alt="Teacher Avatar">
+            </div>
+            <div class="teacher-card-content">
+              <h2 class="teacher-card-name">John Smith</h2>
+              <p class="teacher-card-subject">Mathematics Teacher</p>
+              <p class="teacher-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel risus ligula. Proin viverra felis non lacus tempor, nec consectetur odio rutrum.</p>
+              <a href="#" class="teacher-card-link">Learn More</a>
+            </div>
+          </div>
+          
+				</div>
+        <div class="swiper-slide ">
+					<div class="teacher-card">
+            <div class="teacher-card-image">
+              <img src="https://www.wiseup-teambuilding.co.uk/wp-content/uploads/2021/03/Teacher-1500x1000.jpg" alt="Teacher Avatar">
+            </div>
+            <div class="teacher-card-content">
+              <h2 class="teacher-card-name">John Smith</h2>
+              <p class="teacher-card-subject">Mathematics Teacher</p>
+              <p class="teacher-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel risus ligula. Proin viverra felis non lacus tempor, nec consectetur odio rutrum.</p>
+              <a href="#" class="teacher-card-link">Learn More</a>
+            </div>
+          </div>
+          
+				</div>
+        <div class="swiper-slide">
+					<div class="teacher-card">
+            <div class="teacher-card-image">
+              <img src="https://www.educationnext.org/wp-content/uploads/2020/03/ednext-sept19-blog-hess-teacher.png" alt="Teacher Avatar">
+            </div>
+            <div class="teacher-card-content">
+              <h2 class="teacher-card-name">John Smith</h2>
+              <p class="teacher-card-subject">Mathematics Teacher</p>
+              <p class="teacher-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel risus ligula. Proin viverra felis non lacus tempor, nec consectetur odio rutrum.</p>
+              <a href="#" class="teacher-card-link">Learn More</a>
+            </div>
+          </div>
+          
+				</div>
+        <div class="swiper-slide">
+					<div class="teacher-card">
+            <div class="teacher-card-image">
+              <img src="https://www.washingtonpolicy.org/library/imglib/HAPPY-TEACHER-education-success-picture-id111923128.jpg" alt="Teacher Avatar">
+            </div>
+            <div class="teacher-card-content">
+              <h2 class="teacher-card-name">John Smith</h2>
+              <p class="teacher-card-subject">Mathematics Teacher</p>
+              <p class="teacher-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel risus ligula. Proin viverra felis non lacus tempor, nec consectetur odio rutrum.</p>
+              <a href="#" class="teacher-card-link">Learn More</a>
+            </div>
+          </div>
+          
+				</div>
+
+		
+                
+			</div>
+			<!-- If we need pagination -->
+			<div class="swiper-pagination"></div>
+		</div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- footer starts -->
+<div class="container-fluid footer-container" style="border-top: 1px solid #dbdada;">
+  <div class="container-md">
+      <div class="row  py-4">
+          <div class="col-md-4">
+              <h5 class="footer-header">Location</h5>
+              <img src="image/Screenshot from 2023-07-14 12-48-53.png" alt="" style="width: 250px ; height: 180px;">
+              <div class="mt-3 d-flex">
+                <p class="me-3 footer-text"><i class="fa-solid fa-location-dot"></i></p>
+                <span class="footer-text">Room 64 & 65, Tower 11,
+                  Garden City Condo, 74 th Street,
+                  Near Jinlong Myanmar Machinery
+                  Trading Mart, Pyigyitagon Tsp, Mdy</span>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <h5 class="footer-header">Contact us</h5>
+              <div class="mt-3 d-flex">
+                <p class="me-3 footer-text"><i class="fas fa-phone me-2"></i></p>
+                <span class="footer-text">09-40 40 60 366<br>
+                  09-40 40 60 377</span>
+              </div>
+              <div class="mt-3 d-flex">
+                <p class="me-3 footer-text"><i class="fas fa-envelope-open me-2"></i></p>
+                <span class="footer-text">admin@hmmi.tech <br>sales.hmmi@gmail.com</span>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <form action="">
+                  <input type="email" class="form-control" placeholder="Enter your email">
+                  <button class="add-school btn px-3 my-3 float-end">follow Us!</button>
+              </form>
+              <div class="text-primary " style="font-size: 40px;">
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-youtube text-danger"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- footer ends -->
+    <script></script>
+    <!-- content ends -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <script
+      type="text/javascript"
+      src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    ></script>
+    <script src="script.js"></script>
+    <script>
+      let inputBox = document.querySelector('.input-box'),
+  searchIcon = document.querySelector('.search'),
+  closeIcon = document.querySelector('.close-icon');
+
+// ---- ---- Open Input ---- ---- //
+searchIcon.addEventListener('click', () => {
+  inputBox.classList.add('open');
+});
+// ---- ---- Close Input ---- ---- //
+closeIcon.addEventListener('click', () => {
+  inputBox.classList.remove('open');
+});     
+    </script>
+    		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+			const swiper = new Swiper(".swiper", {
+				// Optional parameters
+				// effect: 'fade', // Use the fade effect for movie-like transitions
+				// fadeEffect: {
+				//   crossFade: true
+				// },
+                autoplay:true,
+                pauseOnMouseEnter:true,
+                delay:3000,
+				loop: true,
+				slidesPerView: 3,
+				autoPlay: true,
+				spaceBetween: 10,
+				toggle: true,
+				// momentum: true,
+				// minimumVelocity:0.2,
+				// sticky:false,
+				// If we need pagination
+				pagination: {
+					el: ".swiper-pagination",
+				},
+				on: {
+					slideNextTransitionStart: function () {
+						updateSlideStyles();
+					},
+					slidePrevTransitionStart: function () {
+						updateSlideStyles();
+					},
+				},
+				init: false,
+			});
+
+			// Initialize Swiper
+			swiper.init();
+
+			function updateSlideStyles() {
+				var slides = swiper.slides;
+				for (var i = 0; i < slides.length; i++) {
+					var slide = slides[i];
+					slide.classList.remove("middle");
+				}
+				var activeSlideIndex = swiper.activeIndex;
+				console.log(activeSlideIndex);
+				slides[activeSlideIndex + 1].classList.add("middle");
+
+				if (swiper.slides.length === 1) {
+					// Apply the creative effect when there is only one slide visible
+				}
+			}
+		</script>
+    <!-- <script src="scrollmagic.js"></script> -->
+  </body>
+</html>

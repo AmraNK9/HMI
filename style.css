@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+}
+::-webkit-scrollbar{
+  width: 0.5rem;
+}
+.search-box {
+  height: 50px;
+  border-radius: 50px;
+}
+
+.search-btn {
+  color: white;
+  float: right;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 2s;
+}
+
+.fa-search {
+  font-size: 20px;
+  color: #010e1a9b;
+}
+
+.search-input {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: #010e1a9b;
+  font-size: 15px;
+  transition: 0.4s;
+  line-height: 50px;
+  width: 0;
+}
+
+.search-box:hover > .search-input {
+  width: 250px;
+  padding: 0 7px;
+}
+  .add-school{
+    background-color: #3492eb;
+    color: white;
+    width: 150px;
+  }
+  .add-school:hover{
+    background-color: #0e81ed;;
+    color: white;
+  }
+
+  .nav-link:hover{
+    color: #0e81ed;
+  }
+  .first-dropdown:hover .first-dropdown-menu {
+    display: block;
+  }
+  .second-dropdown:hover .second-dropdown-menu {
+    display: block;
+    margin-left: 160px;
+    margin-top: -30px;
+  }
+  /* .second-dropdown .dropdown-toggle::after {
+    content: "\f054";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      float: right;
+      margin-left: 5px;
+  } */
+
+  .second-dropdown-toggle::after{
+    display: inline-block;
+    margin-left: 0.255em;
+    vertical-align: 0.255em;
+    content: "";
+    vertical-align: 0.065em; 
+    border-left: 0.3em solid;
+    border-top: 0.3em solid transparent;
+    border-bottom: 0.3em solid transparent;
+    border-right: 0;
+  }
+  .dropdown-item:hover{
+    color: #0e81ed;
+  }
+  .banner img {
+    /* background: url(image/Design1.jpg); */
+    /* background-repeat: no-repeat; */
+    object-fit:  cover;
+    /* background-position: center; */
+    width: 100%;
+    height: 700px;
+    /* filter:blur(0.3rem); */
+  }
+  .banner-container{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+  }
+  @media screen and (max-width: 1000px) {
+    .banner {
+        object-fit: cover;
+      }
+  }
+  .banner-header{
+    position: absolute;
+    width: 550px;
+    top: 30%;
+    left: 78%;
+    /* background-color: #0e81ed;  */
+    
+    transform: translate(-50% , -50%);
+  }
+  .banner-text{
+    position: absolute;
+    width: 500px;
+    top: 60%;
+    left: 80%;
+    transform: translate(-50% , -50%);
+  }
+  .banner-header h1{
+    font-size: 80px;
+    font-family:Impact,;
+  }
+  .banner-header h2{
+    color: #73c2e3;
+    font-size: 50px;
+  }
+  .banner-text{
+    color: #010e1a9b;
+    font-weight: 100;
+    /* font-size: small; */
+    font-family: Impact;
+  }
+  .underline{
+    margin-top: 20px;
+    border-bottom:  3px solid yellow;
+  }
+
+  /* html.sr .widget {
+    visibility: hidden;
+} */
+.banner{
+    position: relative;
+    top: 0px;
+
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0),rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.6) ,rgba(255, 255, 255, 0.6) , rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.8)) !important;
+
+}
+.blur{
+    position: absolute;
+    z-index: 10000;
+}
+.hmi-logo img{
+    object-fit: contain;
+}
+.main-body-content{
+    width: 75%;
+}
+.text-card{
+    border: 1px solid rgb(238, 236, 236);
+    border-radius: 16px;
+    box-shadow: 0 0 128px 0 #73c1e31e,
+    0 32px 64px -48px #73b4d07c;
+}
+.textbox{
+    font-size: 18px;
+    line-height: 50px;
+    align-items: center;
+    color: #838282;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.activities{
+    position: relative;
+    background-color: transparent;
+}
+.activities-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: rgb(232, 229, 229);
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 30px;
+    border-bottom: 8px solid yellow;
+    z-index: 9999;
+}
+.activities-seemore{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: rgb(232, 229, 229);
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 9999;
+    cursor: pointer;
+}   
+.activities-seemore:hover{
+    color:#73c2e3;
+}
+.ativity-image-wrapper .col-2{
+    position:relative;
+}
+.ativity-image-wrapper .col-2 img{
+  width: 100%;
+  height: 130px;
+}
+
+.ativity-image-wrapper .col-2 .over-lay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+}
+
+
+.ativity-image-wrapper .col-2 .over-lay:hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    opacity: 0;
+}
+/* .swiper {
+    width: 600px;
+    height: 300px;
+  } */
+  .course{
+            margin: 15px;
+            background: #fff;
+            max-width: 400px;
+            min-height:350px;
+            border: 1px solid rgb(210, 207, 207);
+            border-radius: 16px;
+            box-shadow: 0 0 128px 0 #73c1e31e,
+    0 32px 64px -48px #73b4d07c;
+        }
+        
+        .course h2{
+            margin-top: 30px;
+            font-size: 28px;
+            color: #12306B;
+            text-align: center;
+        }
+        .course ul{
+            margin-top: 28px;
+            margin-left: 20px;
+        }
+        .course li{
+            color:#3f547d;
+            font-size: 18px;
+            text-align: left;
+        }
+        .course-header{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color:#12306B;
+            margin: 20px;
+        }
+        .course-header h1{
+            font-size: 50px;
+            font-weight: 700;
+        }
+        .course-header p{
+            font-size: 30px;
+            font-weight: 600;
+        }
+        .footer-header{
+          color: #676464;
+        }
+        .footer-text{
+          color: #626262;
+        }
+
+          /* .banner-text-container{
+            backdrop-filter: blur(1px);
+          } */
