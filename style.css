@@ -288,3 +288,7 @@
           /* .banner-text-container{
             backdrop-filter: blur(1px);
           } */
+          .swiper{
+            height: 400px;
+            overflow-y: visible;
+          }
