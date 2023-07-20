@@ -1,13 +1,13 @@
 .loader {
     position: fixed;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     perspective: 800px;
     background-color: aliceblue;
-    z-index: 99999;
+    z-index: 99999999;
   }
 
   .loader .circle {

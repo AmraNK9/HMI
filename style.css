@@ -112,7 +112,7 @@
 	position: absolute;
 	width: 550px;
 	top: 30%;
-	left: 78%;
+	left: 50%;
 	/* background-color: #0e81ed;  */
 
 	transform: translate(-50%, -50%);
@@ -120,23 +120,35 @@
 .banner-text {
 	position: absolute;
 	width: 500px;
-	top: 60%;
-	left: 80%;
-	transform: translate(-50%, -50%);
+	bottom: 100px;
+  right: 0px;
+
+	/* transform: translate(-50%, -50%); */
 }
 .banner-header h1 {
 	font-size: 80px;
 	font-family: Impact;
+
+}
+h1.slideRight1{
+  text-align: center;
 }
 .banner-header h2 {
-	color: #73c2e3;
-	font-size: 50px;
+	color: #5990e8d3;
+	font-size: 40px;
+  text-align: center;
 }
 .banner-text {
 	color: #010e1a9b;
 	font-weight: 100;
 	/* font-size: small; */
 	font-family: Impact;
+}
+.banner-text h3{
+  font-size: medium;
+  text-align: right;
+  padding-right: 10px;
+
 }
 .underline {
 	margin-top: 20px;
@@ -161,6 +173,17 @@
 		rgba(255, 255, 255, 0.7),
 		rgba(255, 255, 255, 0.8)
 	) !important;
+}
+@media (max-width:450px){
+  .banner-header h1{
+    font-size: 70px;
+  }
+  .banner-header h2{
+    font-size: 20px;
+  }
+  .banner-text h3{
+    font-size: small;
+  }
 }
 .blur {
 	position: absolute;
@@ -201,6 +224,7 @@
 	z-index: 9999;
 	width: 500px;
 }
+
 .activities-seemore {
 	position: absolute;
 	top: 70%;
@@ -221,7 +245,7 @@
 }
 .ativity-image-wrapper .col-2 img {
 	width: 100%;
-	height: 130px;
+	height: 100px;
 	object-fit: cover;
 }
 
@@ -245,6 +269,17 @@
     width: 600px;
     height: 300px;
   } */
+  @media (max-width: 500px){
+    .activities-text{
+      font-size: 60px;
+    }
+    .ativity-image-wrapper .col-2 img{
+      height: 70px;
+    }
+    p.textbox{
+      font-size: small;
+    }
+  }
 .course {
 	margin: 15px;
 	background: #fff;
@@ -257,17 +292,17 @@
 
 .course h2 {
 	margin-top: 30px;
-	font-size: 28px;
+	font-size: large;
 	color: #12306b;
 	text-align: center;
 }
 .course ul {
 	margin-top: 28px;
-	margin-left: 20px;
+	margin-left: 6px;
 }
 .course li {
 	color: #3f547d;
-	font-size: 18px;
+	font-size: medium;
 	text-align: left;
 }
 .course-header {
@@ -279,11 +314,11 @@
 	margin: 20px;
 }
 .course-header h1 {
-	font-size: 50px;
+	font-size: x-large;
 	font-weight: 700;
 }
 .course-header p {
-	font-size: 30px;
+	font-size: large;
 	font-weight: 600;
 }
 .footer-header {

@@ -8,21 +8,21 @@ var slideRight1 = {
     opacity: .6
 };
 var slideRight2 = {
-    delay:500,
+    delay:100,
     distance: '120%',
     duration: 1200,
     origin: 'right',
     opacity: .6
 };
 var slideRight3 = {
-    delay:1000,
+    delay:200,
     distance: '120%',
     duration: 1200,
     origin: 'right',
     opacity: .6
 };
 var slideRight4 = {
-    delay:1500,
+    delay:300,
     distance: '120%',
     duration: 1200,
     origin: 'right',
@@ -36,7 +36,7 @@ var slideLeft1 = {
     opacity: .6
 };
 var slideLeft2 = {
-    delay:500,
+    delay:100,
     distance: '120%',
     duration: 1200,
     origin: 'left',
