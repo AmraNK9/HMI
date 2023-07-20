@@ -104,6 +104,7 @@ ScrollReveal().reveal('#ip-btn',scaleUpBottom)
 ScrollReveal().reveal('#ip-left-2',slideLeft1)
 ScrollReveal().reveal('#ip-right-2',slideRight1)
 ScrollReveal().reveal('#ip-btn-2',scaleUpBottom)
+ScrollReveal().reveal('h1',scaleUpBottom)
 
 
 const loader = document.querySelector('.loader')
