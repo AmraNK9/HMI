@@ -57,6 +57,24 @@
 .teacher-card-link:hover {
 	background-color: #555;
 }
+.teacher-overlay {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 9999999;
+	background-color: transparent;
+}
+.teacher-overlay span {
+	position: absolute;
+	bottom: 0.5rem;
+	right: 0.5rem;
+	color: rgb(255, 255, 255);
+	background-color: #3d3d3d69;
+	padding: 5px 10px;
+	border-radius: 10px;
+	
+}
 @media (max-width: 1200px) {
 	.teacher-card-content {
 		display: none;
@@ -64,11 +82,20 @@
 	}
 	.teacher-card-image {
 		flex: none;
+		width: 100%;
+
 	}
 	.teacher-card-image img {
 		width: 100%;
 		height: 200px;
 		object-fit: cover;
-    object-position: 40% 50%;
+		object-position: 40% 50%;
+	}
+	.swiper {
+		height: 330px;
+		overflow-y: visible;
+	}
+	.middle .teacher-overlay  {
+		display: block;
 	}
 }
