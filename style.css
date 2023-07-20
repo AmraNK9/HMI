@@ -308,10 +308,14 @@
 }
 .fe .row .col-md-6 .course{
   width: 100%;
+  padding-right: 10px;
 }
-.ip .row .col-md-6 .course{
+.ip .row .col-md-4 .course{
   width: 100%;
 }
 .ip .row{
   flex: none;
+}
+.ip .row .col-md-4{
+  padding: 0;
 }
