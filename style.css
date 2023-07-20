@@ -193,7 +193,7 @@ h1.slideRight1{
 	object-fit: contain;
 }
 .main-body-content {
-	width: 75%;
+	width:99% ;
 }
 .text-card {
 	border: 1px solid rgb(238, 236, 236);
@@ -201,8 +201,8 @@ h1.slideRight1{
 	box-shadow: 0 0 128px 0 #73c1e31e, 0 32px 64px -48px #73b4d07c;
 }
 .textbox {
-	font-size: 18px;
-	line-height: 50px;
+	font-size: medium;
+	line-height:34px;
 	align-items: center;
 	color: #838282;
 	font-family: Arial, Helvetica, sans-serif;
@@ -227,17 +227,17 @@ h1.slideRight1{
 
 .activities-seemore {
 	position: absolute;
-	top: 70%;
+	top: 80%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color: rgb(232, 229, 229);
-	font-size: 40px;
+	font-size: xx-large;
 	font-family: Arial, Helvetica, sans-serif;
 	z-index: 9999;
 	cursor: pointer;
 }
 .activities-seemore:hover {
-	color: #73c2e3;
+	color: #0524f0;
 }
 
 .ativity-image-wrapper .col-2 {
@@ -278,6 +278,11 @@ h1.slideRight1{
     }
     p.textbox{
       font-size: small;
+    }
+  }
+  @media(max-width:400px){
+    .activities-text{
+      font-size: 50px;
     }
   }
 .course {
