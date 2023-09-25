@@ -2,7 +2,7 @@
 	display: flex;
 	background-color: #f2f2f2;
 	border-radius: 10px;
-	overflow: hidden;
+	overflow-x: hidden;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	transition: transform 0.3s ease;
 }
@@ -14,7 +14,7 @@
 .teacher-card-image {
 	flex: 0 0 160px;
 	position: relative;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
 .teacher-card-image img {
@@ -92,8 +92,9 @@
 		object-position: 40% 50%;
 	}
 	.swiper {
-		height: 330px;
+		height: 400px;
 		overflow-y: visible;
+		overflow-x: hidden;
 	}
 	.middle .teacher-overlay  {
 		display: block;

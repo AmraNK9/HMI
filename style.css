@@ -2,6 +2,23 @@
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
+	overflow-y: visible
+	;
+}
+.swiper-slide{
+	display: flex;
+	align-items: center;
+}
+.swiper-backface-hidden .swiper-slide{
+	overflow-x: visible;
+	overflow-y: visible;
+}
+body{
+	overflow-x: hidden;
+
+}
+.swiper {
+	overflow-x: visible;
 }
 ::-webkit-scrollbar {
 	width: 0.5rem;
@@ -9,6 +26,11 @@
 .search-box {
 	height: 50px;
 	border-radius: 50px;
+}
+.swiper-wrapper{
+	overflow-x: visible;
+	overflow-y: visible;
+	/* overflow-x: scroll; */
 }
 
 .search-btn {
@@ -338,6 +360,11 @@ h1.slideRight1{
           } */
 .swiper {
 	height: 400px;
+	overflow-y: visible;
+	overflow-x: hidden;
+
+}
+.swiper-wrapper{
 	overflow-y: visible;
 }
 
